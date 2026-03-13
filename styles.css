@@ -500,16 +500,18 @@ h3 {
 
 .capstone-model-split {
   grid-template-columns: 2fr 1fr;
-  align-items: start;
+  align-items: center;
 }
 
 .capstone-four-one {
   grid-template-columns: 4fr 1fr;
+  align-items: center;
 }
 
 
 .capstone-five-one-six {
   grid-template-columns: 5fr 1fr;
+  align-items: center;
 }
 
 .capstone-text-block p {
