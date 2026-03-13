@@ -244,6 +244,9 @@ h3 {
 }
 
 .section-image.coming-soon-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: min(68vh, 620px);
   aspect-ratio: auto;
 }
