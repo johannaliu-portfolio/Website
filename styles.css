@@ -404,10 +404,11 @@ h3 {
 #details-turnaround {
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
   border-radius: 0.9rem;
   margin-top: 0.75rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .detail-section-split {
