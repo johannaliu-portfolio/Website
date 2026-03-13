@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Modeling Detail | Johanna Liu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <a class="brand" href="index.html">Johanna Liu</a>
+        <p class="tagline">Modeler & Animator</p>
+        <nav class="nav-group" aria-label="Main navigation">
+          <a class="nav-link" href="index.html">Home</a>
+          <span class="nav-link active">Portfolio</span>
+          <div class="subnav">
+            <a class="active" href="portfolio-3d-modeling.html">3D Modeling</a>
+            <a href="portfolio-animation.html">Animation</a>
+            <a href="portfolio-capstone.html">Capstone</a>
+          </div>
+          <a class="nav-link" href="resume.html">Resume</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="panel">
+          <h1 id="detail-title">Detail</h1>
+          <p id="detail-desc"></p>
+          <a class="btn secondary" href="portfolio-3d-modeling.html">Back to 3D Modeling</a>
+        </section>
+        <p class="footer">© <span id="year"></span> Johanna Liu</p>
+      </main>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      const map = {
+        'modeling-atrium-scene.html': {
+          title: 'Atrium Scene',
+          desc: 'Environment build focused on architecture scale, clean topology flow, and cinematic lighting passes.'
+        },
+        'modeling-surface-study.html': {
+          title: 'Surface Study',
+          desc: 'Material look-dev exercise testing roughness variation, reflections, and contrast balance.'
+        },
+        'modeling-terrain-concept.html': {
+          title: 'Terrain Concept Mesh',
+          desc: 'Procedural terrain concept emphasizing silhouette readability, depth layering, and atmosphere.'
+        }
+      };
+      const key = location.pathname.split('/').pop();
+      const data = map[key] || { title: '3D Modeling Detail', desc: 'Project details coming soon.' };
+      document.getElementById('detail-title').textContent = data.title;
+      document.getElementById('detail-desc').textContent = data.desc;
+      document.title = `${data.title} | Johanna Liu`;
+    </script>
+  </body>
+</html>

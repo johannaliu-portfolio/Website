@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Modeling | Johanna Liu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <a class="brand" href="index.html">Johanna Liu</a>
+        <p class="tagline">Modeler & Animator</p>
+        <nav class="nav-group" aria-label="Main navigation">
+          <a class="nav-link" href="index.html">Home</a>
+          <span class="nav-link active">Portfolio</span>
+          <div class="subnav">
+            <a class="active" href="portfolio-3d-modeling.html">3D Modeling</a>
+            <a href="portfolio-animation.html">Animation</a>
+            <a href="portfolio-capstone.html">Capstone</a>
+          </div>
+          <a class="nav-link" href="resume.html">Resume</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="panel">
+          <p class="eyebrow">Portfolio Subpage</p>
+          <h1>3D Modeling</h1>
+          <p>Three featured modeling projects. Click each image to open its detailed subpage.</p>
+        </section>
+
+        <section class="panel" style="margin-top: 1rem">
+          <h2>Section 1 · Atrium Scene</h2>
+          <a class="detail-tile" href="modeling-details.html" aria-label="Open Atrium Scene details">
+            <img src="assets/coming-soon.svg" alt="Futuristic atrium 3D environment render" />
+            <span class="detail-overlay">Click to see details</span>
+          </a>
+        </section>
+
+        <section class="panel" style="margin-top: 1rem">
+          <h2>Section 2 · Surface Study</h2>
+          <a class="detail-tile" href="modeling-details.html" aria-label="Open Surface Study details">
+            <img src="assets/coming-soon.svg" alt="Abstract reflective object render" />
+            <span class="detail-overlay">Click to see details</span>
+          </a>
+        </section>
+
+        <section class="panel" style="margin-top: 1rem">
+          <h2>Section 3 · Terrain Concept Mesh</h2>
+          <a class="detail-tile" href="modeling-details.html" aria-label="Open Terrain Concept details">
+            <img src="assets/coming-soon.svg" alt="Abstract 3D landscape style composition" />
+            <span class="detail-overlay">Click to see details</span>
+          </a>
+        </section>
+
+        <p class="footer">© <span id="year"></span> Johanna Liu</p>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
