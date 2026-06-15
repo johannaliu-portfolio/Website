@@ -647,3 +647,16 @@ h3 {
   margin-top: 1rem;
   display: inline-block;
 }
+
+.home-mview-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f6efe6;
+}
+
+.home-mview-box canvas,
+.home-mview-box iframe {
+  width: 100%;
+  height: 100%;
+}
