@@ -687,10 +687,16 @@ h3 {
   z-index: 5;
 }
 
+.hero-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
 .hero-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: inherit;
+  border: 0;
   display: block;
 }
