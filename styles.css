@@ -681,7 +681,7 @@ h3 {
 
 .hero-section .hero-media {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 320px;
   overflow: hidden;
   border-radius: 1rem;
 }
