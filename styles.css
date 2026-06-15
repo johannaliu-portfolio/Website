@@ -37,12 +37,20 @@ body {
 }
 
 .brand {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.7rem;
   color: var(--text);
   text-decoration: none;
   margin-bottom: 0.25rem;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
 }
 
 .tagline {
