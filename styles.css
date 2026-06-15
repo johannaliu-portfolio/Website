@@ -39,7 +39,7 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.7rem;
   color: var(--text);
