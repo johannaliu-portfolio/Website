@@ -12,7 +12,7 @@
     />
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css" />
-    <script src="marmoset.js"></script>
+    <script src="https://viewer.marmoset.co/main/marmoset.js"></script>
   </head>
   <body>
     <div class="layout">
@@ -47,17 +47,13 @@
 <section class="panel" style="margin-top: 1rem">
   <h2>Section 1 · Sewing Machine</h2>
 
-  <div class="mview-box">
-    <script>
-      marmoset.embed("models/Sewing_Machine.mview", {
-        width: 800,
-        height: 500,
-        autoStart: true,
-        fullFrame: true,
-        pagePreset: false
-      });
-    </script>
-  </div>
+  <div class="mview-box" id="sewing-machine-viewer"></div>
+
+  <script>
+    var viewer = new marmoset.WebViewer(800, 500, "models/Sewing_Machine.mview");
+    document.getElementById("sewing-machine-viewer").appendChild(viewer.domRoot);
+    viewer.loadScene();
+  </script>
 
   <a class="btn" href="modeling-details.html">Open Sewing Machine Details</a>
 </section>
