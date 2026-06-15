@@ -675,3 +675,14 @@ h3 {
 .home-model-btn {
   align-self: flex-start;
 }
+
+.home-model-tile {
+  position: relative;
+}
+
+.home-model-btn {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 5;
+}
