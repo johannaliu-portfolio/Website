@@ -61,6 +61,7 @@ body {
   margin: 0 0 1.5rem;
   color: var(--muted);
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .nav-group {
