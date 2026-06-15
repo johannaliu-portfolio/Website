@@ -53,12 +53,12 @@
         </section>
 
         <section class="portfolio-grid-section home-section">
-          <div class="tile home-model-tile">
-            <div class="home-mview-box" id="home-sewing-machine-viewer"></div>
-
-            <a class="btn home-model-btn" href="portfolio-3d-modeling.html">View 3D Modeling</a>
+          <div class="home-model-card">
+            <div class="tile home-model-tile">
+              <div class="home-mview-box" id="home-sewing-machine-viewer"></div>
+              <a class="btn home-model-btn" href="portfolio-3d-modeling.html">View 3D Modeling</a>
+            </div>
           </div>
-
           <script>
             var homeViewer = new marmoset.WebViewer(800, 500, "models/Sewing_Machine.mview");
             document.getElementById("home-sewing-machine-viewer").appendChild(homeViewer.domRoot);
