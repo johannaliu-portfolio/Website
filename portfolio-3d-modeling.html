@@ -12,6 +12,7 @@
     />
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css" />
+    <script src="marmoset.js"></script>
   </head>
   <body>
     <div class="layout">
@@ -43,10 +44,18 @@
 
         <section class="panel" style="margin-top: 1rem">
           <h2>Section 1 · Sewing Machine</h2>
-          <a class="detail-tile" href="modeling-details.html" aria-label="Open Atrium Scene details">
-            <img src="assets/coming-soon.svg" alt="Futuristic atrium 3D environment render" />
-            <span class="detail-overlay">Click to see details</span>
-          </a>
+
+          <div class="mview-box"></div>
+
+          <script>
+            marmoset.embed("models/Sewing_Machine.mview", {
+              width: 800,
+              height: 500,
+              autoStart: true,
+              fullFrame: true,
+              pagePreset: false
+            });
+          </script>
         </section>
 
         <section class="panel" style="margin-top: 1rem">

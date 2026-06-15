@@ -631,3 +631,13 @@ h3 {
     flex-wrap: wrap;
   }
 }
+
+.mview-box {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #f6efe6;
+}
