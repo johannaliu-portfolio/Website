@@ -691,3 +691,86 @@ h3 {
   border: 0;
   display: block;
 }
+
+@media (max-width: 768px) {
+  .layout {
+    display: block;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .brand {
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand-logo {
+    width: 120px !important;
+    height: 120px !important;
+    max-width: 120px !important;
+  }
+
+  .nav-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subnav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .hero-section,
+  .hero-vertical,
+  .hero-compact,
+  .split,
+  .portfolio-grid-section {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-media iframe,
+  .hero-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+
+  .home-model-card,
+  .tile,
+  .home-model-tile {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .home-mview-box {
+    width: 100%;
+    max-width: 100%;
+    height: 320px;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+  .btn,
+  .home-model-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
