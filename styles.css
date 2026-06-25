@@ -692,86 +692,72 @@ h3 {
   display: block;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 @media (max-width: 768px) {
-  body {
-    margin: 0;
-  }
-
   .layout {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .sidebar {
-    position: static;
-    width: auto;
-    max-width: none;
-    margin: 16px;
-    padding: 28px;
-    min-height: auto;
+    position: static !important;
+    width: auto !important;
+    max-width: none !important;
+    min-height: auto !important;
+    margin: 16px !important;
+    padding: 22px !important;
+  }
+
+  .brand-logo {
+    width: 86px !important;
+    height: 86px !important;
+    max-width: 86px !important;
+  }
+
+  .brand span {
+    font-size: 28px !important;
+  }
+
+  .tagline {
+    font-size: 16px !important;
   }
 
   .content {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 16px;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 16px !important;
   }
 
   .panel,
-  .hero-section,
-  .hero-vertical,
-  .hero-compact,
-  .portfolio-grid-section,
   .home-model-card,
+  .modeling-card,
+  .detail-card,
   .tile {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    overflow: hidden !important;
   }
 
-  .hero-media {
-    width: 100%;
+  .home-mview-box,
+  .mview-box,
+  [id*="viewer"],
+  [id*="Viewer"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 10;
+    overflow: hidden !important;
   }
 
-  .hero-media iframe,
-  iframe,
-  video {
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-  }
-
-  .home-mview-box {
-    width: 100%;
-    max-width: 100%;
-    height: 320px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .btn,
-  .home-model-btn {
-    display: block;
-    width: 100%;
-    text-align: center;
+  .home-mview-box > *,
+  .mview-box > *,
+  [id*="viewer"] > *,
+  [id*="Viewer"] > *,
+  canvas {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
