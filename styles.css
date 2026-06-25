@@ -692,67 +692,69 @@ h3 {
   display: block;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
   .layout {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
   }
 
   .sidebar {
-    position: relative;
-    width: 100%;
+    position: static;
+    width: auto;
+    max-width: none;
+    margin: 16px;
+    padding: 28px;
     min-height: auto;
-    padding: 20px;
-  }
-
-  .brand {
-    align-items: center;
-    text-align: center;
-  }
-
-  .brand-logo {
-    width: 120px !important;
-    height: 120px !important;
-    max-width: 120px !important;
-  }
-
-  .nav-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .subnav {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
   }
 
   .content {
     width: 100%;
-    padding: 20px;
+    max-width: 100%;
+    margin: 0;
+    padding: 16px;
   }
 
+  .panel,
   .hero-section,
   .hero-vertical,
   .hero-compact,
-  .split,
-  .portfolio-grid-section {
-    display: block;
+  .portfolio-grid-section,
+  .home-model-card,
+  .tile {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-media {
     width: 100%;
   }
 
   .hero-media iframe,
-  .hero-video {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-  }
-
-  .home-model-card,
-  .tile,
-  .home-model-tile {
+  iframe,
+  video {
     width: 100%;
     max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
   }
 
   .home-mview-box {
@@ -761,10 +763,9 @@ h3 {
     height: 320px;
   }
 
-  img,
-  video,
-  iframe {
+  img {
     max-width: 100%;
+    height: auto;
   }
 
   .btn,
