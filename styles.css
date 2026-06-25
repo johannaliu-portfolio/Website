@@ -775,3 +775,6 @@ h3 {
     height: 260px !important;
   }
 }
+body {
+  outline: 10px solid red !important;
+}
