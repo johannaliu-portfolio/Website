@@ -693,71 +693,85 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .layout,
+  body,
+  html {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
   .layout {
     display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
   }
 
-  .sidebar {
+  .content,
+  .home-content,
+  main.content,
+  main.home-content {
     position: static !important;
-    width: auto !important;
-    max-width: none !important;
-    min-height: auto !important;
-    margin: 16px !important;
-    padding: 22px !important;
-  }
-
-  .brand-logo {
-    width: 86px !important;
-    height: 86px !important;
-    max-width: 86px !important;
-  }
-
-  .brand span {
-    font-size: 28px !important;
-  }
-
-  .tagline {
-    font-size: 16px !important;
-  }
-
-  .content {
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
     width: 100% !important;
     max-width: 100% !important;
+    min-width: 0 !important;
     margin: 0 !important;
+    margin-left: 0 !important;
     padding: 16px !important;
   }
 
+  .home-section,
+  .hero-section,
+  .hero-vertical,
+  .hero-compact,
+  .portfolio-grid-section,
   .panel,
-  .home-model-card,
-  .modeling-card,
-  .detail-card,
-  .tile {
+  .split {
+    display: block !important;
     width: 100% !important;
     max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 0 18px 0 !important;
+  }
+
+  .hero-media,
+  .hero-bottom-copy,
+  .home-model-card,
+  .tile,
+  .modeling-card,
+  .detail-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     overflow: hidden !important;
   }
 
+  iframe,
+  video,
+  canvas,
+  .hero-video,
   .home-mview-box,
   .mview-box,
   [id*="viewer"],
   [id*="Viewer"] {
     width: 100% !important;
     max-width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 16 / 10;
-    overflow: hidden !important;
+    min-width: 0 !important;
   }
 
-  .home-mview-box > *,
-  .mview-box > *,
-  [id*="viewer"] > *,
-  [id*="Viewer"] > *,
-  canvas {
-    width: 100% !important;
-    max-width: 100% !important;
+  .hero-media iframe,
+  .hero-video {
+    aspect-ratio: 16 / 9;
+    height: auto !important;
+  }
+
+  .home-mview-box,
+  .mview-box,
+  [id*="viewer"],
+  [id*="Viewer"] {
+    height: 260px !important;
   }
 }
