@@ -775,6 +775,55 @@ h3 {
     height: 260px !important;
   }
 }
-body {
-  outline: 10px solid red !important;
+.capstone-group > h2 {
+  margin-bottom: 1.25rem;
+}
+
+.art-picture-only img,
+.two-image-grid img,
+.four-image-grid img,
+.character-card img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.art-picture-only img {
+  aspect-ratio: 16 / 9;
+}
+
+.art-text-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.two-image-grid,
+.four-image-grid,
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.two-image-grid img,
+.four-image-grid img {
+  aspect-ratio: 4 / 3;
+}
+
+.character-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.character-card img {
+  aspect-ratio: 3 / 4;
+}
+
+@media (max-width: 768px) {
+  .two-image-grid,
+  .four-image-grid,
+  .character-grid {
+    grid-template-columns: 1fr;
+  }
 }
