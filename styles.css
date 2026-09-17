@@ -824,6 +824,14 @@ h3 {
   margin-bottom: 1.25rem;
 }
 
+.detail-left-col > img.section-three-natural-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: left center;
+}
+
 .home-slideshow {
   position: relative;
   width: 100%;
