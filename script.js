@@ -101,16 +101,16 @@ if (homeSlideshow) {
   startSlideshow();
 }
 
-document.querySelectorAll(".character-mview-box[data-mview]").forEach((viewerContainer) => {
+document.querySelectorAll(".character-mview-box[data-mview], .modeling-mview-box[data-mview]").forEach((viewerContainer) => {
   if (typeof marmoset === "undefined") {
     return;
   }
 
-  const characterViewer = new marmoset.WebViewer(800, 500, viewerContainer.dataset.mview);
-  characterViewer.domRoot.style.setProperty("width", "100%", "important");
-  characterViewer.domRoot.style.setProperty("height", "100%", "important");
-  characterViewer.domRoot.style.setProperty("max-width", "100%", "important");
-  characterViewer.domRoot.style.setProperty("position", "relative", "important");
-  viewerContainer.replaceChildren(characterViewer.domRoot);
-  characterViewer.loadScene();
+  const mview = new marmoset.WebViewer(800, 500, viewerContainer.dataset.mview);
+  mview.domRoot.style.setProperty("width", "100%", "important");
+  mview.domRoot.style.setProperty("height", "100%", "important");
+  mview.domRoot.style.setProperty("max-width", "100%", "important");
+  mview.domRoot.style.setProperty("position", "relative", "important");
+  viewerContainer.replaceChildren(mview.domRoot);
+  mview.loadScene();
 });

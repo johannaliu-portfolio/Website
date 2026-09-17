@@ -905,9 +905,34 @@ h3 {
 
 .modeling-render-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.modeling-viewer-panel {
+  overflow: hidden;
+}
+
+.modeling-mview-box {
+  position: relative;
+  width: min(100%, 800px);
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  margin: 1rem auto 0;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #f6efe6;
+}
+
+.modeling-mview-box > *,
+.modeling-mview-box > * > *,
+.modeling-mview-box canvas,
+.modeling-mview-box iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
 }
 
 .modeling-render-grid img {
@@ -1058,7 +1083,9 @@ h3 {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background: #000;
 }
 
 .section-image.about-me-image {
@@ -1255,6 +1282,15 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 0.9rem;
+  border: 1px solid var(--line);
+}
+
+.character-detail-single-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
   border-radius: 0.9rem;
   border: 1px solid var(--line);
 }

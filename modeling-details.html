@@ -39,14 +39,9 @@
       </aside>
 
       <main class="content">
-        <section class="panel">
+        <section class="panel modeling-viewer-panel">
           <p class="eyebrow">3D Modeling Details Subpage</p>
-          <div class="mview-box" id="sewing-machine-detail-viewer" aria-label="Interactive Sewing Machine 3D model viewer"></div>
-          <script>
-            var sewingMachineDetailViewer = new marmoset.WebViewer(800, 500, "models/SewingMachine_MarmosetViewer.mview");
-            document.getElementById("sewing-machine-detail-viewer").appendChild(sewingMachineDetailViewer.domRoot);
-            sewingMachineDetailViewer.loadScene();
-          </script>
+          <div class="modeling-mview-box" data-mview="models/SewingMachine_MarmosetViewer.mview" aria-label="Interactive Sewing Machine 3D model viewer"></div>
           <div class="modeling-render-grid">
             <img src="Images/Render1.png" alt="Sewing machine render 1" />
             <img src="Images/Render2.png" alt="Sewing machine render 2" />
