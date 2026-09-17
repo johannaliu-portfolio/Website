@@ -41,14 +41,17 @@
       <main class="content home-content">
         <section class="panel hero-section home-section hero-vertical hero-compact">
           <div class="hero-media">
-            <iframe
-              class="hero-video"
-              src="https://www.youtube.com/embed/Thsztgkl0tk"
-              title="Johanna Liu Demo Reel"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+            <div class="home-slideshow" aria-roledescription="carousel" aria-label="Featured portfolio slideshow">
+              <div class="home-slide active"><img src="assets/coming-soon.svg" alt="Featured portfolio image 1" /></div>
+              <div class="home-slide"><img src="assets/coming-soon.svg" alt="Featured portfolio image 2" /></div>
+              <div class="home-slide"><img src="assets/coming-soon.svg" alt="Featured portfolio image 3" /></div>
+              <div class="home-slide"><img src="assets/coming-soon.svg" alt="Featured portfolio image 4" /></div>
+              <div class="home-slide"><img src="assets/coming-soon.svg" alt="Featured portfolio image 5" /></div>
+              <div class="home-slide"><img src="assets/coming-soon.svg" alt="Featured portfolio image 6" /></div>
+              <button class="slideshow-arrow slideshow-arrow-left" type="button" aria-label="Show previous image">&#10094;</button>
+              <button class="slideshow-arrow slideshow-arrow-right" type="button" aria-label="Show next image">&#10095;</button>
+              <p class="slideshow-status" aria-live="polite"><span>1</span> / 6</p>
+            </div>
           </div>
 
           <div class="hero-bottom-copy">
