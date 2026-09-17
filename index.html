@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://viewer.marmoset.co/main/marmoset.js"></script>
   </head>
   <body>
     <div class="layout">
@@ -64,30 +63,21 @@
         </section>
 
         <section class="portfolio-grid-section home-section">
-          <div class="home-model-card">
-            <div class="tile home-model-tile">
-              <div class="home-mview-box" id="home-sewing-machine-viewer"></div>
-            </div>
-
-            <a class="btn home-model-btn" href="portfolio-3d-modeling.html">View 3D Modeling</a>
-          </div>
-          <script>
-            var homeViewer = new marmoset.WebViewer(800, 500, "models/Sewing_Machine.mview");
-            document.getElementById("home-sewing-machine-viewer").appendChild(homeViewer.domRoot);
-            homeViewer.loadScene();
-          </script>
-
-          <a class="tile" href="portfolio-capstone.html" aria-label="Go to the Capstone portfolio page">
-            <img src="assets/coming-soon.svg" alt="Project Frog capstone preview" />
+          <a class="tile" href="modeling-details.html" aria-label="Open the 3D modeling project details">
+            <img src="Images/Render1.png" alt="3D modeling project render" />
             <span class="detail-overlay">View Project</span>
           </a>
-          <a class="tile" href="portfolio-capstone.html" aria-label="Go to Capstone portfolio page">
-            <img src="assets/coming-soon.svg" alt="Capstone concept art composition" />
-            <span class="detail-overlay">View Project</span>
+          <a class="tile" href="character-one-detail.html" aria-label="Open the frog player character details">
+            <img src="Images/frogplayer.png" alt="Frog player character" />
+            <span class="detail-overlay">View Character</span>
           </a>
-          <a class="tile" href="portfolio-3d-modeling.html" aria-label="Go to additional 3D Modeling portfolio piece">
-            <img src="assets/coming-soon.svg" alt="Abstract 3D landscape render" />
-            <span class="detail-overlay">View Project</span>
+          <a class="tile" href="character-two-detail.html" aria-label="Open the crocodile character details">
+            <img src="Images/croc.png" alt="Crocodile character" />
+            <span class="detail-overlay">View Character</span>
+          </a>
+          <a class="tile" href="capstone-tileable-textures.html" aria-label="Open the Tileable Textures page">
+            <img src="Images/tileabletexture.png" alt="Tileable texture showcase" />
+            <span class="detail-overlay">View Textures</span>
           </a>
         </section>
 
