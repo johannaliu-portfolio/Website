@@ -515,9 +515,26 @@ h3 {
 }
 
 .game-link-image {
+  position: relative;
   display: block;
   overflow: hidden;
   border-radius: 0.9rem;
+}
+
+.game-link-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.72);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
 }
 
 .game-link-image img {
@@ -531,6 +548,16 @@ h3 {
 .game-link-image:hover img,
 .game-link-image:focus-visible img {
   transform: scale(1.02);
+}
+
+.game-link-image:hover .game-link-overlay,
+.game-link-image:focus-visible .game-link-overlay {
+  opacity: 1;
+}
+
+.game-access-message {
+  display: block;
+  text-align: center;
 }
 
 .detail-circles.small img {
