@@ -966,6 +966,14 @@ h3 {
   object-fit: cover;
 }
 
+.section-image.about-me-image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 .youtube-embed {
   width: 100%;
   height: auto;
@@ -1060,7 +1068,7 @@ h3 {
   align-items: start;
 }
 
-.texture-scroll-gallery .texture-explanation-split img {
+.texture-explanation-split img {
   width: auto;
   height: auto;
   max-width: 100%;
