@@ -1044,6 +1044,15 @@ h3 {
   border: 1px solid var(--line);
 }
 
+.texture-scroll-gallery img:nth-child(2) {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+  justify-self: center;
+}
+
 .scroll-hint {
   color: var(--muted);
   font-size: 0.9rem;
