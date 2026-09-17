@@ -823,6 +823,19 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.capstone-subpage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.capstone-subpage-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
 .character-card img {
   aspect-ratio: 3 / 4;
 }
@@ -832,6 +845,10 @@ h3 {
   .three-image-grid,
   .four-image-grid,
   .character-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .capstone-subpage-grid {
     grid-template-columns: 1fr;
   }
 }
