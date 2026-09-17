@@ -890,6 +890,18 @@ h3 {
   min-width: 0;
 }
 
+.texture-card-grid {
+  grid-template-columns: repeat(7, minmax(180px, 1fr));
+  overflow-x: auto;
+  padding-bottom: 0.75rem;
+  scroll-snap-type: x proximity;
+  overscroll-behavior-inline: contain;
+}
+
+.texture-card-grid a {
+  scroll-snap-align: start;
+}
+
 .texture-scroll-gallery {
   display: flex;
   gap: 1rem;
@@ -946,5 +958,9 @@ h3 {
   .texture-scroll-gallery img {
     flex-basis: 96%;
     width: 96%;
+  }
+
+  .texture-card-grid {
+    grid-template-columns: repeat(7, minmax(72vw, 1fr));
   }
 }
