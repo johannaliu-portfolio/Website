@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://viewer.marmoset.co/main/marmoset.js"></script>
   </head>
   <body>
     <div class="layout">
@@ -42,7 +43,12 @@
         <section class="panel">
           <p class="eyebrow">Capstone Character Details</p>
           <h1>Character Two · Turnaround</h1>
-          <div class="coming-soon-video" id="details-turnaround" aria-label="3D model turnaround animation" role="img"><span>COMING SOON VIDEO</span></div>
+          <div class="character-mview-box" id="croc-character-viewer" aria-label="Interactive Crocodile character 3D model"></div>
+          <script>
+            var crocCharacterViewer = new marmoset.WebViewer(800, 500, "models/Croc.mview");
+            document.getElementById("croc-character-viewer").appendChild(crocCharacterViewer.domRoot);
+            crocCharacterViewer.loadScene();
+          </script>
         </section>
 
         <section class="panel detail-section-split" style="margin-top: 1rem">
