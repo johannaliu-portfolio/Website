@@ -105,6 +105,26 @@ body {
   color: var(--muted);
 }
 
+.capstone-subnav {
+  margin: 0.15rem 0 0.35rem 0.55rem;
+  padding-left: 0.7rem;
+  border-left: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.capstone-subnav a {
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.capstone-subnav a.active {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .content {
   margin-left: 240px;
   min-height: 100vh;
@@ -834,6 +854,21 @@ h3 {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.youtube-embed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  background: #000;
+}
+
+.youtube-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .character-card img {
