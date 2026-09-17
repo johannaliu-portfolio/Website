@@ -100,3 +100,17 @@ if (homeSlideshow) {
   showSlide(0);
   startSlideshow();
 }
+
+document.querySelectorAll(".character-mview-box[data-mview]").forEach((viewerContainer) => {
+  if (typeof marmoset === "undefined") {
+    return;
+  }
+
+  const characterViewer = new marmoset.WebViewer(800, 500, viewerContainer.dataset.mview);
+  characterViewer.domRoot.style.setProperty("width", "100%", "important");
+  characterViewer.domRoot.style.setProperty("height", "100%", "important");
+  characterViewer.domRoot.style.setProperty("max-width", "100%", "important");
+  characterViewer.domRoot.style.setProperty("position", "relative", "important");
+  viewerContainer.replaceChildren(characterViewer.domRoot);
+  characterViewer.loadScene();
+});

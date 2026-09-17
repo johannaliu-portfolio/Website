@@ -39,15 +39,10 @@
       </aside>
 
       <main class="content">
-        <section class="panel">
+        <section class="panel character-viewer-panel">
           <p class="eyebrow">Capstone Character Details</p>
           <h1>Character Three · Turnaround</h1>
-          <div class="character-mview-box" id="golem-character-viewer" aria-label="Interactive Golem character 3D model"></div>
-          <script>
-            var golemCharacterViewer = new marmoset.WebViewer(800, 500, "models/Golem.mview");
-            document.getElementById("golem-character-viewer").appendChild(golemCharacterViewer.domRoot);
-            golemCharacterViewer.loadScene();
-          </script>
+          <div class="character-mview-box" data-mview="models/Golem.mview" aria-label="Interactive Golem character 3D model"></div>
         </section>
 
          <div class="btn-row">

@@ -39,15 +39,10 @@
       </aside>
 
       <main class="content">
-        <section class="panel">
+        <section class="panel character-viewer-panel">
           <p class="eyebrow">Capstone Character Details</p>
           <h1>Character Two · Turnaround</h1>
-          <div class="character-mview-box" id="croc-character-viewer" aria-label="Interactive Crocodile character 3D model"></div>
-          <script>
-            var crocCharacterViewer = new marmoset.WebViewer(800, 500, "models/Croc.mview");
-            document.getElementById("croc-character-viewer").appendChild(crocCharacterViewer.domRoot);
-            crocCharacterViewer.loadScene();
-          </script>
+          <div class="character-mview-box" data-mview="models/Croc.mview" aria-label="Interactive Crocodile character 3D model"></div>
         </section>
 
          <div class="btn-row">
