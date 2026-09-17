@@ -877,8 +877,12 @@ h3 {
 
 .capstone-title-image {
   display: block;
-  width: 100%;
+  width: calc(100% + 3rem);
+  max-width: none;
   height: auto;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  margin-bottom: -1.5rem;
   border-radius: 0.9rem;
 }
 
