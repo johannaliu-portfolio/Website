@@ -106,8 +106,8 @@ body {
 }
 
 .capstone-subnav {
-  margin: 0.15rem 0 0.35rem 0.55rem;
-  padding-left: 0.7rem;
+  margin: 0.2rem 0 0.45rem 1rem;
+  padding-left: 0.8rem;
   border-left: 1px solid var(--line);
   display: flex;
   flex-direction: column;
@@ -115,9 +115,17 @@ body {
 }
 
 .capstone-subnav a {
+  position: relative;
   font-size: 0.82rem;
   font-weight: 500;
   line-height: 1.35;
+}
+
+.capstone-subnav a::before {
+  content: "–";
+  position: absolute;
+  right: calc(100% + 0.3rem);
+  color: var(--line);
 }
 
 .capstone-subnav a.active {
@@ -858,7 +866,7 @@ h3 {
 
 .youtube-embed {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: min(68vh, 620px);
   overflow: hidden;
   border-radius: 0.8rem;
   background: #000;
@@ -885,5 +893,10 @@ h3 {
 
   .capstone-subpage-grid {
     grid-template-columns: 1fr;
+  }
+
+  .youtube-embed {
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 }
