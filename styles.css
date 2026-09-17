@@ -1072,8 +1072,8 @@ h3 {
 .about-me-image-wrap {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  margin-right: -1.5rem;
+  justify-content: center;
+  margin-right: 0;
 }
 
 .youtube-embed {
