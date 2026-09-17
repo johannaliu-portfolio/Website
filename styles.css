@@ -485,6 +485,8 @@ h3 {
 
 .capstone-half-split p {
   margin: 0;
+  font-size: clamp(1.15rem, 1.5vw, 1.45rem);
+  line-height: 1.7;
 }
 
 .detail-circles.small img {
@@ -866,10 +868,47 @@ h3 {
 
 .youtube-embed {
   width: 100%;
-  height: min(68vh, 620px);
+  height: auto;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 0.8rem;
   background: #000;
+}
+
+.capstone-title-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.9rem;
+}
+
+.texture-card-grid a {
+  min-width: 0;
+}
+
+.texture-scroll-gallery {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.25rem 0 1rem;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-inline: contain;
+  scrollbar-color: var(--accent) var(--line);
+}
+
+.texture-scroll-gallery img {
+  flex: 0 0 min(82%, 820px);
+  width: min(82%, 820px);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.9rem;
+  border: 1px solid var(--line);
+  scroll-snap-align: start;
+}
+
+.scroll-hint {
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .youtube-embed iframe {
@@ -898,5 +937,10 @@ h3 {
   .youtube-embed {
     height: auto;
     aspect-ratio: 16 / 9;
+  }
+
+  .texture-scroll-gallery img {
+    flex-basis: 90%;
+    width: 90%;
   }
 }
