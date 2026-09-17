@@ -897,9 +897,9 @@ h3 {
 }
 
 .texture-scroll-gallery img {
-  flex: 0 0 min(82%, 820px);
-  width: min(82%, 820px);
-  aspect-ratio: 4 / 3;
+  flex: 0 0 min(94%, 1100px);
+  width: min(94%, 1100px);
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 0.9rem;
   border: 1px solid var(--line);
@@ -940,7 +940,7 @@ h3 {
   }
 
   .texture-scroll-gallery img {
-    flex-basis: 90%;
-    width: 90%;
+    flex-basis: 96%;
+    width: 96%;
   }
 }
