@@ -519,17 +519,19 @@ h3 {
   display: block;
   overflow: hidden;
   border-radius: 0.9rem;
+  isolation: isolate;
 }
 
 .game-link-overlay {
   position: absolute;
   inset: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   color: #fff;
-  background: rgba(0, 0, 0, 0.72);
+  background: rgba(0, 0, 0, 0.18);
   font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: 700;
   text-align: center;
@@ -542,12 +544,13 @@ h3 {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  transition: transform 0.25s ease;
+  transition: filter 0.25s ease, transform 0.25s ease;
 }
 
 .game-link-image:hover img,
 .game-link-image:focus-visible img {
   transform: scale(1.02);
+  filter: brightness(0.35);
 }
 
 .game-link-image:hover .game-link-overlay,
@@ -1062,10 +1065,15 @@ h3 {
   width: 50%;
   max-width: 50%;
   height: auto;
-  margin-right: 0;
-  margin-left: auto;
   aspect-ratio: auto;
   object-fit: contain;
+}
+
+.about-me-image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: -1.5rem;
 }
 
 .youtube-embed {
