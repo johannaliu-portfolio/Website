@@ -902,6 +902,12 @@ h3 {
   scroll-snap-align: start;
 }
 
+.texture-card-grid img {
+  aspect-ratio: 4 / 9;
+  height: auto;
+  object-fit: cover;
+}
+
 .texture-scroll-gallery {
   display: flex;
   gap: 1rem;
