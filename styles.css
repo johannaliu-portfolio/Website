@@ -1035,14 +1035,18 @@ h3 {
   width: 50%;
   max-width: 50%;
   height: auto;
+  margin-right: 0;
+  margin-left: auto;
   aspect-ratio: auto;
   object-fit: contain;
 }
 
 .youtube-embed {
-  width: 100%;
+  width: 75%;
   height: auto;
   aspect-ratio: 16 / 9;
+  margin-right: auto;
+  margin-left: auto;
   overflow: hidden;
   border-radius: 0.8rem;
   background: #000;
