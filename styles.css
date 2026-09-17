@@ -903,29 +903,27 @@ h3 {
 }
 
 .texture-card-grid img {
-  aspect-ratio: 4 / 9;
-  height: auto;
+  width: 100%;
+  height: clamp(480px, 58vw, 820px);
+  aspect-ratio: auto;
   object-fit: cover;
 }
 
 .texture-scroll-gallery {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
-  overflow-x: auto;
-  padding: 0.25rem 0 1rem;
-  scroll-snap-type: x mandatory;
-  overscroll-behavior-inline: contain;
-  scrollbar-color: var(--accent) var(--line);
+  padding: 0.25rem 0;
 }
 
 .texture-scroll-gallery img {
-  flex: 0 0 min(94%, 1100px);
-  width: min(94%, 1100px);
+  display: block;
+  width: 100%;
+  max-width: none;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 0.9rem;
   border: 1px solid var(--line);
-  scroll-snap-align: start;
 }
 
 .scroll-hint {
@@ -962,8 +960,7 @@ h3 {
   }
 
   .texture-scroll-gallery img {
-    flex-basis: 96%;
-    width: 96%;
+    width: 100%;
   }
 
   .texture-card-grid {
