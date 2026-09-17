@@ -937,9 +937,12 @@ h3 {
 
 .modeling-render-grid img {
   display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  justify-self: center;
   border-radius: 0.9rem;
   border: 1px solid var(--line);
 }
