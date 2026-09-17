@@ -1081,6 +1081,7 @@ h3 {
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.75;
+  align-self: center;
 }
 
 .scroll-hint {
