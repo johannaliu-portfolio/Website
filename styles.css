@@ -844,6 +844,22 @@ h3 {
   height: 100% !important;
 }
 
+.modeling-render-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.modeling-render-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.9rem;
+  border: 1px solid var(--line);
+}
+
 .detail-left-col > img.section-three-natural-image {
   width: 100%;
   height: auto;
@@ -1146,6 +1162,10 @@ h3 {
   }
 
   .texture-explanation-split {
+    grid-template-columns: 1fr;
+  }
+
+  .modeling-render-grid {
     grid-template-columns: 1fr;
   }
 
