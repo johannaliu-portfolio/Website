@@ -1053,6 +1053,28 @@ h3 {
   justify-self: center;
 }
 
+.texture-explanation-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.texture-scroll-gallery .texture-explanation-split img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+  justify-self: start;
+}
+
+.texture-explanation-split p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
 .scroll-hint {
   color: var(--muted);
   font-size: 0.9rem;
@@ -1092,6 +1114,10 @@ h3 {
 
   .texture-card-grid {
     grid-template-columns: repeat(7, minmax(72vw, 1fr));
+  }
+
+  .texture-explanation-split {
+    grid-template-columns: 1fr;
   }
 
   .hero-section .hero-media {
