@@ -890,6 +890,24 @@ h3 {
   min-width: 0;
 }
 
+.texture-overview-section {
+  margin-bottom: 1.5rem;
+}
+
+.texture-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.texture-overview-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
 .texture-card-grid {
   grid-template-columns: repeat(7, minmax(180px, 1fr));
   overflow-x: auto;
