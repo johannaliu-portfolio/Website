@@ -1244,6 +1244,21 @@ h3 {
   height: 100% !important;
 }
 
+.character-detail-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.character-detail-image-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.9rem;
+  border: 1px solid var(--line);
+}
+
 @media (max-width: 768px) {
   .two-image-grid,
   .three-image-grid,
@@ -1292,5 +1307,9 @@ h3 {
     width: 100% !important;
     height: auto !important;
     aspect-ratio: 8 / 5;
+  }
+
+  .character-detail-image-grid {
+    grid-template-columns: 1fr;
   }
 }
