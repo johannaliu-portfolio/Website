@@ -781,6 +781,7 @@ h3 {
 
 .art-picture-only img,
 .two-image-grid img,
+.three-image-grid img,
 .four-image-grid img,
 .character-card img {
   display: block;
@@ -800,6 +801,7 @@ h3 {
 }
 
 .two-image-grid,
+.three-image-grid,
 .four-image-grid,
 .character-grid {
   display: grid;
@@ -807,7 +809,12 @@ h3 {
   gap: 1rem;
 }
 
+.three-image-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .two-image-grid img,
+.three-image-grid img,
 .four-image-grid img {
   aspect-ratio: 4 / 3;
 }
@@ -822,6 +829,7 @@ h3 {
 
 @media (max-width: 768px) {
   .two-image-grid,
+  .three-image-grid,
   .four-image-grid,
   .character-grid {
     grid-template-columns: 1fr;
