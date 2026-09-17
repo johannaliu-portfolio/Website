@@ -824,6 +824,26 @@ h3 {
   margin-bottom: 1.25rem;
 }
 
+#sewing-machine-detail-viewer {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#sewing-machine-detail-viewer > * {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#sewing-machine-detail-viewer canvas,
+#sewing-machine-detail-viewer iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .detail-left-col > img.section-three-natural-image {
   width: 100%;
   height: auto;
@@ -967,8 +987,8 @@ h3 {
 }
 
 .section-image.about-me-image {
-  width: auto;
-  max-width: 100%;
+  width: 50%;
+  max-width: 50%;
   height: auto;
   aspect-ratio: auto;
   object-fit: contain;
